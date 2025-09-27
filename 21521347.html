@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu bản thân</title>
+    <!-- Gắn external CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <!-- Menu điều hướng -->
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu bản thân</a> | 
+        <a href="#giao-luu">Gửi thông tin và giao lưu cùng tôi</a>
+    </nav>
+
+    <!-- Câu 2: Chia thành 2 phần bằng <div> -->
+    <div id="gioi-thieu" class="box-intro">
+        <!-- Câu 1: Dùng h1, h2, h3, h4 phân cấp -->
+        <h1 style="color:#CAEDFF;">Giới thiệu bản thân</h1>
+
+        <!-- Câu 4: Thêm ảnh đại diện + inline css canh giữa -->
+        <div style="text-align:center;">
+            <img src="teta.jpg" alt="Ảnh đại diện của tôi" width="150" height="150">
+        </div>
+
+        <h2 style="color:#D8B4F8;">Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Nguyễn Trần Vũ Quang</li>
+            <li>Ngày sinh: 27/06/2002</li>
+            <li>Nghề nghiệp: Sinh viên</li>
+        </ul>
+
+        <h2 style="color:#D8B4F8;">Sở thích</h2>
+        <h3 style="color:#FFC7EA;">Món ăn</h3>
+        <ul>
+            <li>Phở</li>
+            <li>Bún chả</li>
+            <li>Cơm gà</li>
+        </ul>
+
+        <h3 style="color:#FFC7EA;">Giải trí</h3>
+        <h4>Trò chơi</h4>
+        <ol>
+            <li>PGR</li>
+            <li>Wuwa</li>
+            <li>Hsr</li>
+        </ol>
+
+        <h4>Bài hát yêu thích</h4>
+        <ul>
+            <li>To be Hero X</li>
+            <li>Unravel</li>
+            <li>Crossing field</li>
+        </ul>
+
+        <h2 style="color:#D8B4F8;">Mục tiêu của bản thân</h2>
+        <!-- Bảng mục tiêu -->
+        <table>
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn thành</th>
+            </tr>
+            <tr>
+                <td>Học tập tốt</td>
+                <td>2024-2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Rèn luyện kỹ năng lập trình</td>
+                <td>2025</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Có công việc ổn định sau khi ra trường</td>
+                <td>2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="giao-luu" class="box-contact">
+        <h2 style="color:#D8B4F8;">Gửi thông tin và giao lưu cùng tôi</h2>
+
+        <!-- Form -->
+        <form>
+            <label>Họ và tên:</label>
+            <input type="text" name="name"><br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email"><br><br>
+
+            <label>Tin nhắn:</label><br>
+            <textarea name="message" rows="5" cols="40"></textarea><br><br>
+
+            <label>Giới tính:</label>
+            <input type="radio" name="gender" value="Nam"> Nam
+            <input type="radio" name="gender" value="Nữ"> Nữ
+            <br><br>
+
+            <label>Sở thích:</label>
+            <input type="checkbox" name="hobby" value="Nghe nhạc"> Nghe nhạc
+            <input type="checkbox" name="hobby" value="Bơi lội"> Bơi lội
+            <input type="checkbox" name="hobby" value="Biển"> Biển
+            <br><br>
+
+            <label>Ngành:</label>
+            <select name="major">
+                <option>Khoa học Máy tính</option>
+                <option>Công nghệ thông tin</option>
+                <option>Kỹ thuật phần mềm</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Gửi">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>@2024 123456 Nguyễn Trần Vũ Quang</p>
+    </footer>
+
+</body>
+</html>
